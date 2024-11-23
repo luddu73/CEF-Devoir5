@@ -1,10 +1,12 @@
+import Modale from './component/modale';
+
 function Home() {
   return (
     <div className="Home">
       <div className="home-Banner text-light text-center d-flex flex-column align-items-center justify-content-center">
           <h2 className="home-name">Bonjour, je suis John Doe</h2>
           <h1 className="home-poste">Développeur Web Full Stack</h1>
-          <button type="button" className="btn btn-danger px-4 mt-4">En savoir plus</button>
+          <button type="button" className="btn btn-danger px-4 mt-4" data-bs-target="#github" data-bs-toggle="modal">En savoir plus</button>
       </div>
       <div className="row justify-content-center">
         <div className="col-md-8 m-4">
