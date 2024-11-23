@@ -5,12 +5,18 @@ import App from './App';
 import Header from './component/header';
 import Footer from './component/footer';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter} from "react-router-dom"; // J'importe le router, puis le créer les balises BrowserRouter pour entourer le module App qui est ma page principale
+import {Routes, Route, Link} from "react-router-dom"; // J'importe le système de route ; Link pour éviter le rechargement de page, on remplace les a par link
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header />
-    <App />
+    <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<App/>}></Route>
+      </Routes>
+    </BrowserRouter>
     <Footer />
   </React.StrictMode>
 );
