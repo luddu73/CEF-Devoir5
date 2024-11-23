@@ -14,7 +14,6 @@
 /* Demande client : police pour les titres et les balises strong à 600 de graisse */
 h1, h2, h3, h4, h5, h6, strong {
   font-family: "Nunito Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
   font-variation-settings:
@@ -41,4 +40,29 @@ header a:hover{
 /* Les liens deviennent gras dans le footer au survol */
 footer a:hover{
   font-weight: bolder;
+}
+
+/* Mise en place du background principal */
+.home-Banner{
+  background-image: url(/public/img/hero-bg.jpg); 
+  background-size: cover;
+  background-position: center;
+}
+
+/*Mise en forme des titres dans la présentations */
+.home-presentation h3{
+  border-bottom: 0.1em solid blue;
+}
+
+@media screen and (min-width: 992px) {
+    .home-Banner
+    {
+        height: 900px;
+    }  
+    .home-name {
+      font-size:5.5em;
+    }
+    .home-poste {
+      font-size: 4.5em;
+    }
 }
