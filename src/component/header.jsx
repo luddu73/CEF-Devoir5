@@ -12,11 +12,11 @@ export default function Header() {
                     </button>
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div className="navbar-nav ms-auto">
-                        <NavLink to="/" className={({ isActive }) => isActive ? "nav-link text-light mx-1 text-gras" : "nav-link text-light mx-1"}>Home</NavLink>
-                        <NavLink to="/Services" className={({ isActive }) => isActive ? "nav-link text-light mx-1 text-gras" : "nav-link text-light mx-1"}>Services</NavLink>
-                        <NavLink to="/Portfolio" className={({ isActive }) => isActive ? "nav-link text-light mx-1 text-gras" : "nav-link text-light mx-1"}>Portfolio</NavLink>
-                        <NavLink to="/Contact" className={({ isActive }) => isActive ? "nav-link text-light mx-1 text-gras" : "nav-link text-light mx-1"}>Contact</NavLink>
-                        <NavLink to="/Legals" className={({ isActive }) => isActive ? "nav-link text-light mx-1 text-gras" : "nav-link text-light mx-1"}>Mentions légales</NavLink>
+                        <NavLink to="/" className={({ isActive }) => isActive ? "nav-link text-light mx-1 fw-bolder text-decoration-underline" : "nav-link text-light mx-1"}>Home</NavLink>
+                        <NavLink to="/Services" className={({ isActive }) => isActive ? "nav-link text-light mx-1 fw-bolder text-decoration-underline" : "nav-link text-light mx-1"}>Services</NavLink>
+                        <NavLink to="/Portfolio" className={({ isActive }) => isActive ? "nav-link text-light mx-1 fw-bolder text-decoration-underline" : "nav-link text-light mx-1"}>Portfolio</NavLink>
+                        <NavLink to="/Contact" className={({ isActive }) => isActive ? "nav-link text-light mx-1 fw-bolder text-decoration-underline" : "nav-link text-light mx-1"}>Contact</NavLink>
+                        <NavLink to="/Legals" className={({ isActive }) => isActive ? "nav-link text-light mx-1 fw-bolder text-decoration-underline" : "nav-link text-light mx-1"}>Mentions légales</NavLink>
                     </div>
                     </div>
                 </div>
