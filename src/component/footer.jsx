@@ -1,4 +1,5 @@
 import './footer.css';
+import {Link} from "react-router-dom"; // J'importe le système de Link pour éviter le rechargement de page, on remplace les a par link
 
 export default function Footer() {
     return(   
@@ -25,11 +26,11 @@ export default function Footer() {
                         <div className="col-md-3 p-1">
                             <p className="m-auto fs-4">Liens utiles</p>
                             <ul className="list-unstyled" >
-                                <li>Accueil</li>
-                                <li>Services</li>
-                                <li>Portfolio</li>
-                                <li>Me contacter</li>
-                                <li>Mentions légales</li>
+                                <li><Link to="/" className="nav-link text-light mx-1">Accueil</Link></li>
+                                <li><Link to="/Services" className="nav-link text-light mx-1">Services</Link></li>
+                                <li><Link to="/Portfolio" className="nav-link text-light mx-1">Portfolio</Link></li>
+                                <li><Link to="/Contact" className="nav-link text-light mx-1">Me contacter</Link></li>
+                                <li><Link to="/Legals" className="nav-link text-light mx-1">Mentions légales</Link></li>
                             </ul>
                         </div>
                         <div className="col-md-3 p-1"> 

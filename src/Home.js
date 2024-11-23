@@ -1,8 +1,8 @@
-import './App.css';
+import './Home.css';
 
-function App() {
+function Home() {
   return (
-    <div className="App">
+    <div className="Home">
       <header className="App-header">
         <p>
           Site internet de John Doe
@@ -12,4 +12,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
