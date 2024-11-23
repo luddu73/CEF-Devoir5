@@ -21,6 +21,31 @@ function Home() {
             </div>
             <div className="col-6 p-4">
             <h3 className="pb-2">Mes compétences</h3>
+            <p className="my-4"><strong>HTML5 90%</strong>
+              <div className="progress" role="progressbar" aria-label="Danger example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <div className="progress-bar bg-danger" style={{width: "90%"}}></div>
+              </div>
+            </p>
+            <p className="my-4"><strong>CSS3 80%</strong>
+              <div className="progress" role="progressbar" aria-label="Info example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <div className="progress-bar bg-info" style={{width: "80%"}}></div>
+              </div>
+            </p>
+            <p className="my-4"><strong>JAVASCRIPT 70%</strong>
+              <div className="progress" role="progressbar" aria-label="Warning example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                <div className="progress-bar bg-warning" style={{width: "70%"}}></div>
+              </div>
+            </p>
+            <p className="my-4"><strong>PHP 60%</strong>
+              <div className="progress" role="progressbar" aria-label="Success example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                <div className="progress-bar bg-success" style={{width: "60%"}}></div>
+              </div>
+            </p>
+            <p className="my-4"><strong>REACT 50%</strong>
+              <div className="progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <div className="progress-bar" style={{width: "50%"}}></div>
+              </div>
+            </p>
             </div>
           </div>
         </div>
