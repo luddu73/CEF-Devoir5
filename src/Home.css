@@ -21,3 +21,24 @@ h1, h2, h3, h4, h5, h6, strong {
     "wdth" 100,
     "YTLC" 500;
 }
+
+
+/* Les liens se soulignent dans l'header au survol */
+header a:hover{
+  text-decoration: underline;
+}
+
+/* Mise en forme des icones de réseaux sociaux */
+.socialnetwork {
+  font-size:2rem;
+  margin:0.1em;
+  opacity:20%;
+}
+/* Changement de couleur lors du passage de la sourie icone réseaux sociaux */
+.socialnetwork:hover{
+  opacity:100%;
+}
+/* Les liens deviennent gras dans le footer au survol */
+footer a:hover{
+  font-weight: bolder;
+}

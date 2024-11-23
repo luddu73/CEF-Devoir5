@@ -1,4 +1,3 @@
-import './footer.css';
 import {Link} from "react-router-dom"; // J'importe le système de Link pour éviter le rechargement de page, on remplace les a par link
 
 export default function Footer() {
