@@ -1,15 +1,16 @@
 function Services() {
     return (
       <div className="Services">
-        <div className="pages-Banner text-light text-center d-flex flex-column align-items-center justify-content-center">
-        </div>
+        <img src="../img/banner.jpg" className="img-fluid"></img>
         <div className="row justify-content-center">
-            <div className="col-md-8 m-4 text-center">
+            <div className="col-11 col-md-8 m-4 text-center">
                 <div className="row justify-content-center">
                     <div className="col-md-6 header-services">
                         <h1>Mon offre de services</h1>
                         <p>Voici les prestations sur lesquelles je peux intervenir</p>
-                        <hr class="border border-primary border-3 opacity-75"></hr>
+                        <div className="row justify-content-center">
+                            <hr class="border border-primary border-3 opacity-75 col-3 col-md-12"></hr>
+                        </div>
                     </div>
                 </div>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
