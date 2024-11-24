@@ -1,6 +1,9 @@
 import {Link} from "react-router-dom"; // J'importe le système de Link pour éviter le rechargement de page, on remplace les a par link
 
 function Portfolio() {
+
+    document.title = "Portfolio - John Doe, Développeur web full stack";
+
     return (
       <div className="Portfolio">
         <img src="../img/banner.jpg" className="img-fluid" alt="Bannière représentant une illustration abstraite de faisceaux lumineux bleus sur un fond sombre, 

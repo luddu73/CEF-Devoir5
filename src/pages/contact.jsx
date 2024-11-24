@@ -1,5 +1,8 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 function Contact() {
+
+    document.title = "Contact - John Doe, Développeur web full stack";
+
     return (
       <div className="Contact">
         <div className="row justify-content-center m-auto mt-4">

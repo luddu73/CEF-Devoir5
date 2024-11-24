@@ -1,4 +1,7 @@
 function Home() {
+
+  document.title = "John Doe, Développeur web full stack";
+
   return (
     <div className="Home">
       <div className="home-Banner text-light text-center d-flex flex-column align-items-center justify-content-center m-auto">

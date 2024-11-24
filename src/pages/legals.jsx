@@ -1,4 +1,7 @@
 function Legals() {
+
+    document.title = "Mentions Légales - John Doe, Développeur web full stack";
+
     return (
       <div className="Legals">
         <div className="row justify-content-center m-auto mt-4">
