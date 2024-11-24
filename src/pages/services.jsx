@@ -2,7 +2,7 @@ function Services() {
     return (
       <div className="Services">
         <img src="../img/banner.jpg" className="img-fluid"></img>
-        <div className="row justify-content-center mt-4">
+        <div className="row justify-content-center m-auto mt-4">
             <div className="col-11 col-md-8 m-4 text-center">
                 <div className="row justify-content-center">
                     <div className="col-md-6 header-services">

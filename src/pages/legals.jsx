@@ -1,7 +1,7 @@
 function Legals() {
     return (
       <div className="Legals">
-        <div className="row justify-content-center mt-4">
+        <div className="row justify-content-center m-auto mt-4">
             <div className="col-11 col-md-9 m-4">
                 <div className="row justify-content-center">
                     <div className="col-md-9 header-services text-center">
