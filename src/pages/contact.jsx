@@ -9,7 +9,7 @@ function Contact() {
                         <h1>Contact</h1>
                         <p>Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.</p>
                         <div className="row justify-content-center">
-                            <hr class="border border-primary border-3 opacity-75 col-3 col-md-6 mt-3"></hr>
+                            <hr className="border border-primary border-3 opacity-75 col-3 col-md-6 mt-3"></hr>
                         </div>
                     </div>
                 </div>
@@ -30,11 +30,11 @@ function Contact() {
                             <div className="input-group my-1">
                                 <input type="text" className="form-control" id="sujet" aria-describedby="sujet" placeholder="Sujet" required></input>
                             </div>
-                            <div class="my-1">
+                            <div className="my-1">
                                 <textarea className="form-control ratio" style={{height:"400px"}} placeholder="Votre message" id="message"></textarea>
                             </div>
-                            <div class="col-12 my-2 text-center">
-                                <button class="btn btn-primary" type="submit">Envoyer</button>
+                            <div className="col-12 my-2 text-center">
+                                <button className="btn btn-primary" type="submit">Envoyer</button>
                             </div>
                         </form>
                     </div>
@@ -42,14 +42,14 @@ function Contact() {
                         <h3 className="pb-2 fs-2 mb-4">Mes coordonnées</h3>
                         <p className="m-auto"><strong className="fs-4">John Doe</strong></p>
                         <address>
-                            <i class="bi bi-map"></i> 40 Rue Laure Diebold<br/>
-                            <i class="bi bi-geo-alt"></i> 69009 Lyon, France<br/>
-                            <i class="bi bi-phone"></i> 06 06 06 06 06<br/>
-                            <i class="bi bi-envelope-at"></i> john.doe@gmail.com<br/>
+                            <i className="bi bi-map"></i> 40 Rue Laure Diebold<br/>
+                            <i className="bi bi-geo-alt"></i> 69009 Lyon, France<br/>
+                            <i className="bi bi-phone"></i> 06 06 06 06 06<br/>
+                            <i className="bi bi-envelope-at"></i> john.doe@gmail.com<br/>
                         </address>
                         <div className="my-4">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5565.2543020379735!2d4.7989789!3d45.778662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb65edac5b3f%3A0xe01c47049cb2e2b9!2s40%20Rue%20Laure%20Diebold!5e0!3m2!1sfr!2sfr!4v1732464160990!5m2!1sfr!2sfr" 
-                            width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="ratio"></iframe>
+                            width="600" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="ratio"></iframe>
                         </div>
                     </div>
                 </div>
