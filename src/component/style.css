@@ -71,6 +71,10 @@ footer a:hover{
 .home-presentation h3{
   border-bottom: 0.1em solid #0d6efd;
 }
+/* Ajout de la séparation après le titre dans la page contact */
+.Contact h2{
+  border-bottom: 0.1em solid #0d6efd;
+}
 /* Changement de taille d'écriture selon taille de l'écran */
 @media screen and (min-width: 992px) {
     .home-name {

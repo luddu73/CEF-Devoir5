@@ -16,7 +16,7 @@ function Contact() {
 
                 <div className="row shadow-lg p-4 m-3 bg-body-tertiary rounded home-presentation">
                     <div className="col-md-6 py-4">
-                        <h3 className="pb-2 fs-2 mb-4">Formulaire de contact</h3>
+                        <h2 className="pb-2 fs-2 mb-4">Formulaire de contact</h2>
                         <form className="row my-4" method="post" action="#">
                             <div className="input-group my-1">
                                 <input type="text" className="form-control" id="nom" aria-describedby="nom" placeholder="Votre nom" required></input>
@@ -39,7 +39,7 @@ function Contact() {
                         </form>
                     </div>
                     <div className="col-md-6 py-4">
-                        <h3 className="pb-2 fs-2 mb-4">Mes coordonnées</h3>
+                        <h2 className="pb-2 fs-2 mb-4">Mes coordonnées</h2>
                         <p className="m-auto"><strong className="fs-4">John Doe</strong></p>
                         <address>
                             <i className="bi bi-map"></i> 40 Rue Laure Diebold<br/>
