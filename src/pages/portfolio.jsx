@@ -87,7 +87,7 @@ function Portfolio() {
                     </div>
                     <div className="col">
                         <div className="card h-100">
-                            <img src="../img/portfolio/screens.jpg" className="card-img-top" alt="Deux ordinateurs et une tablette sur un bureau. On aperçois la maquette 
+                            <img src="../img/portfolio/maquette.jpg" className="card-img-top" alt="Deux ordinateurs et une tablette sur un bureau. On aperçois la maquette 
                                                                                             d'un site sur la tablette"></img>
                             <div className="card-body">
                                 <h2>Maquette d'un site web</h2>
