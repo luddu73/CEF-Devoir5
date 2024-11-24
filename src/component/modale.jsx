@@ -17,7 +17,7 @@ function ProfilGitHub() {
 
   return (
     <div className="ProfilGitHub">
-        <div className="modal fade "  tabindex="-1"  id="github"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal fade "  tabIndex="-1"  id="github"  aria-hidden="true">
             <div className="modal-dialog modal-lg modal-dialog-centered" >
                 <div className="modal-content bg-dark text-light border-secondary">
                     <div className="modal-header border-secondary" data-bs-theme="dark">
@@ -26,11 +26,11 @@ function ProfilGitHub() {
                     </div>
                     <div className="modal-body row">
                         <div className="col-md-6 p-4">
-                            <img src={user.avatar_url} alt="Photo de profil GitHub de John Doe" className="img-fluid"></img>
+                            <img src={user.avatar_url} alt="Avatar de John Doe sur GitHub" className="img-fluid"></img>
                         </div>
                         <div className="col-md-6 p-4">
                             <ul className="list-unstyled lh-lg">
-                                <li className="py-2"><i className="bi bi-person"></i> <a href={user.html_url} target="_blank">{user.login}</a></li>
+                                <li className="py-2"><i className="bi bi-person"></i> <a href={user.html_url} target="_blank" rel="noreferrer nofollow">{user.login}</a></li>
                                 <li className="py-2"><i className="bi bi-geo-alt"></i> {user.location}</li>
                                 <li className="py-2"><i className="bi bi-card-text"></i> {user.bio}</li>
                                 <li className="py-2"><i className="bi bi-box"></i> Repositories : {user.public_repos}</li>
