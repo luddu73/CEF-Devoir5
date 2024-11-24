@@ -17,7 +17,7 @@ function ProfilGitHub() {
 
   return (
     <div className="ProfilGitHub">
-        <div className="modal fade "  tabindex="-1"  id="github"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal fade "  tabindex="-1"  id="github"  aria-hidden="true">
             <div className="modal-dialog modal-lg modal-dialog-centered" >
                 <div className="modal-content bg-dark text-light border-secondary">
                     <div className="modal-header border-secondary" data-bs-theme="dark">
