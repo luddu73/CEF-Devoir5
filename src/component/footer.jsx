@@ -29,13 +29,13 @@ export default function Footer() {
                                 <li><Link to="/Services" className="nav-link text-light mx-1">Services</Link></li>
                                 <li><Link to="/Portfolio" className="nav-link text-light mx-1">Portfolio</Link></li>
                                 <li><Link to="/Contact" className="nav-link text-light mx-1">Me contacter</Link></li>
-                                <li><Link to="/Legals" className="nav-link text-light mx-1">Mentions légales</Link></li>
+                                <li><Link to="/Legals" rel="nofollow" className="nav-link text-light mx-1">Mentions légales</Link></li>
                             </ul>
                         </div>
                         <div className="col-md-3 p-1"> 
                             <p className="m-auto fs-4">Mes dernières réalisations</p>
                             <ul className="list-unstyled">
-                                <li><Link to="https://transport-manager.net" target="_blank" className="nav-link text-light mx-1">Transport Manager</Link></li> {/*Personnalisation de ce site*/}
+                                <li><Link to="https://transport-manager.net" rel="nofollow" target="_blank" className="nav-link text-light mx-1">Transport Manager</Link></li> {/*Personnalisation de ce site*/}
                                 <li><Link to="/Portfolio" className="nav-link text-light mx-1">Fresh Food</Link></li>
                                 <li><Link to="/Portfolio" className="nav-link text-light mx-1">Espace bien-être</Link></li>
                                 <li><Link to="/Portfolio" className="nav-link text-light mx-1">SEO</Link></li>
