@@ -1,5 +1,3 @@
-import Modale from './component/modale';
-
 function Home() {
   return (
     <div className="Home">
