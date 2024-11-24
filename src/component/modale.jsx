@@ -30,7 +30,7 @@ function ProfilGitHub() {
                         </div>
                         <div className="col-md-6 p-4">
                             <ul className="list-unstyled lh-lg">
-                                <li className="py-2"><i className="bi bi-person"></i> <a href={user.html_url} target="_blank" rel="noreferrer">{user.login}</a></li>
+                                <li className="py-2"><i className="bi bi-person"></i> <a href={user.html_url} target="_blank" rel="noreferrer nofollow">{user.login}</a></li>
                                 <li className="py-2"><i className="bi bi-geo-alt"></i> {user.location}</li>
                                 <li className="py-2"><i className="bi bi-card-text"></i> {user.bio}</li>
                                 <li className="py-2"><i className="bi bi-box"></i> Repositories : {user.public_repos}</li>
