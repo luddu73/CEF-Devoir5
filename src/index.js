@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './component/style.css';
 import Home from './Home';
 import Services from './pages/services';
+import Portfolio from './pages/portfolio';
 import Header from './component/header';
 import Footer from './component/footer';
 import Modale from './component/modale';
@@ -18,6 +19,7 @@ root.render(
       <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/Services" element={<Services/>}></Route>
+          <Route path="/Portfolio" element={<Portfolio/>}></Route>
       </Routes>
       <Modale />
       <Footer />

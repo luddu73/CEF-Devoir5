@@ -35,12 +35,12 @@ export default function Footer() {
                         <div className="col-md-3 p-1"> 
                             <p className="m-auto fs-4">Mes dernières réalisations</p>
                             <ul className="list-unstyled">
-                                <li>Fresh Food</li>
-                                <li>Restaurant Akira</li>
-                                <li>Espace bien-être</li>
-                                <li>SEO</li>
-                                <li>Creation d'une API</li>
-                                <li>Maquette d'un site</li>
+                                <li><Link to="https://transport-manager.net" target="_blank" className="nav-link text-light mx-1">Transport Manager</Link></li> {/*Personnalisation de ce site*/}
+                                <li><Link to="/Portfolio" className="nav-link text-light mx-1">Fresh Food</Link></li>
+                                <li><Link to="/Portfolio" className="nav-link text-light mx-1">Espace bien-être</Link></li>
+                                <li><Link to="/Portfolio" className="nav-link text-light mx-1">SEO</Link></li>
+                                <li><Link to="/Portfolio" className="nav-link text-light mx-1">Creation d'une API</Link></li>
+                                <li><Link to="/Portfolio" className="nav-link text-light mx-1">Maquette d'un site</Link></li>
                             </ul>
                         </div>
                     </div>
