@@ -1,7 +1,8 @@
 function Services() {
     return (
       <div className="Services">
-        <img src="../img/banner.jpg" className="img-fluid"></img>
+        <img src="../img/banner.jpg" className="img-fluid" alt="Bannière représentant une illustration abstraite de faisceaux lumineux bleus sur un fond sombre, 
+                                                                représentant un flux d'énergie ou de données."></img>
         <div className="row justify-content-center m-auto mt-4">
             <div className="col-11 col-md-8 m-4 text-center">
                 <div className="row justify-content-center">
@@ -13,7 +14,8 @@ function Services() {
                         </div>
                     </div>
                 </div>
-                { /* La maquette tablette indique 3 colonnes, cependant, le rendu n'étant pas optimal, je me permet de passer à deux colonnes en dessous des grands écrans */ }
+                { /* La maquette tablette indique 3 colonnes, cependant, le rendu n'étant pas optimal notamment pour le titre de la seconde card, je me permet de passer 
+                à deux colonnes en dessous des grands écrans */ }
                 <div class="row justify-content-center row-cols-1 row-cols-md-2 row-cols-xxl-3 g-4 mt-4">
                     <div class="col">
                         <div class="card h-100">
