@@ -72,3 +72,8 @@ footer a:hover{
     font-size: 3em;
   }
 }
+
+.ProfilGitHub li+li {
+    border-top: 1px solid grey;
+}
+
