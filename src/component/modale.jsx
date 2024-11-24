@@ -17,31 +17,31 @@ function ProfilGitHub() {
 
   return (
     <div className="ProfilGitHub">
-        <div className="modal fade"  tabindex="-1"  id="github"  aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div className="modal-dialog modal-lg modal-dialog-centered">
-                <div className="modal-content bg-dark text-light modal-border-white">
-                    <div className="modal-header">
+        <div className="modal fade "  tabindex="-1"  id="github"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal-dialog modal-lg modal-dialog-centered" >
+                <div className="modal-content bg-dark text-light border-secondary">
+                    <div className="modal-header border-secondary" data-bs-theme="dark">
                         <h5 className="modal-title">Mon profil GitHub</h5>
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="modal-body row">
-                        <div className="col-md-6">
-
+                        <div className="col-md-6 p-4">
+                            <img src={user.avatar_url} alt="Photo de profil GitHub de John Doe" className="img-fluid"></img>
                         </div>
-                        <div className="col-md-6">
-                            <ul>
-                                <li><a href={user.html_url} target="_blank">{user.login}</a></li>
-                                <li>{user.location}</li>
-                                <li>{user.bio}</li>
-                                <li>Repositories : {user.public_repos}</li>
-                                <li>Followers : {user.followers}</li>
-                                <li>Following : {user.following}</li>
+                        <div className="col-md-6 p-4">
+                            <ul className="list-unstyled lh-lg">
+                                <li className="py-2"><i className="bi bi-person"></i> <a href={user.html_url} target="_blank">{user.login}</a></li>
+                                <li className="py-2"><i className="bi bi-geo-alt"></i> {user.location}</li>
+                                <li className="py-2"><i className="bi bi-card-text"></i> {user.bio}</li>
+                                <li className="py-2"><i className="bi bi-box"></i> Repositories : {user.public_repos}</li>
+                                <li className="py-2"><i className="bi bi-people"></i> Followers : {user.followers}</li>
+                                <li className="py-2"><i className="bi bi-people"></i> Following : {user.following}</li>
                             </ul>
                         </div>
                     </div>
-                <div className="modal-footer">
-                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                </div>
+                    <div className="modal-footer border-secondary">
+                        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    </div>
                 </div>
             </div>
         </div>
