@@ -20,14 +20,12 @@ function Legals() {
                             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p className="m-auto"><strong className="fs-4">John Doe</strong></p>
-                                <p>
-                                    <adress>
-                                        <i class="bi bi-map"></i> 40 Rue Laure Diebold<br/>
-                                        <i class="bi bi-geo-alt"></i> 69009 Lyon, France<br/>
-                                        <i class="bi bi-phone"></i> 06 06 06 06 06<br/>
-                                        <i class="bi bi-envelope-at"></i> john.doe@gmail.com<br/>
-                                    </adress>
-                                </p>
+                                <address>
+                                    <i class="bi bi-map"></i> 40 Rue Laure Diebold<br/>
+                                    <i class="bi bi-geo-alt"></i> 69009 Lyon, France<br/>
+                                    <i class="bi bi-phone"></i> 06 06 06 06 06<br/>
+                                    <i class="bi bi-envelope-at"></i> john.doe@gmail.com<br/>
+                                </address>
                             </div>
                             </div>
                         </div>
@@ -40,8 +38,8 @@ function Legals() {
                             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <h3>alwaysdata</h3>
-                                <adress>91 Rue du Faubourg Saint-Honoré, 75008 Paris</adress>
-                                <p className="pt-2"><i class="bi bi-globe"></i> <a href="https://www.alwaysdata.com" target="_blank">www.alwaysdata.com</a></p>
+                                <address>91 Rue du Faubourg Saint-Honoré, 75008 Paris</address>
+                                <p className="pt-2"><i class="bi bi-globe"></i> <a href="https://www.alwaysdata.com" rel="noreferrer nofollow" target="_blank">www.alwaysdata.com</a></p>
                             </div>
                             </div>
                         </div>
@@ -54,9 +52,9 @@ function Legals() {
                             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <h3>Crédits</h3>
-                                <p>Ce site a été réalisé par John Doe, étudiant au <a href="https://www.centre-europeen-formation.fr/" target="_blank">Centre Européen de formation</a>.</p>
-                                <p className="fst-italic">Les images utilisées sur ce site sont libres de droits et ont été obtenues sur le site <a className="fst-italic" href="https://pixabay.com/fr/" target="_blank">Pixabay</a></p>
-                                <p className="fst-italic">La favicon de ce site a été fournie par <a className="fst-italic" href="https://www.flaticon.com/de/kostenlose-icons/john-doe" target="_blank">John doe icons erstellt von Freepik - Flaticon</a></p>
+                                <p>Ce site a été réalisé par John Doe, étudiant au <a href="https://www.centre-europeen-formation.fr/" rel="noreferrer nofollow" target="_blank">Centre Européen de formation</a>.</p>
+                                <p className="fst-italic">Les images utilisées sur ce site sont libres de droits et ont été obtenues sur le site <a className="fst-italic" rel="noreferrer nofollow" href="https://pixabay.com/fr/" target="_blank">Pixabay</a></p>
+                                <p className="fst-italic">La favicon de ce site a été fournie par <a className="fst-italic" rel="noreferrer nofollow" href="https://www.flaticon.com/de/kostenlose-icons/john-doe" target="_blank">John doe icons erstellt von Freepik - Flaticon</a></p>
                             </div>
                             </div>
                         </div>
