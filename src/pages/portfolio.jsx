@@ -4,6 +4,9 @@ function Portfolio() {
 
     document.title = "Portfolio - John Doe, Développeur web full stack";
 
+    const metaRobots = document.querySelector("meta[name='robots']");
+    metaRobots.content="index";
+
     return (
       <div className="Portfolio">
         <img src="../img/banner.jpg" className="img-fluid" alt="Bannière représentant une illustration abstraite de faisceaux lumineux bleus sur un fond sombre, 
