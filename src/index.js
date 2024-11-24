@@ -5,6 +5,7 @@ import Home from './Home';
 import Services from './pages/services';
 import Portfolio from './pages/portfolio';
 import Contact from './pages/contact';
+import Legals from './pages/legals';
 import Header from './component/header';
 import Footer from './component/footer';
 import Modale from './component/modale';
@@ -22,6 +23,7 @@ root.render(
           <Route path="/Services" element={<Services/>}></Route>
           <Route path="/Portfolio" element={<Portfolio/>}></Route>
           <Route path="/Contact" element={<Contact/>}></Route>
+          <Route path="/Legals" element={<Legals/>}></Route>
       </Routes>
       <Modale />
       <Footer />
