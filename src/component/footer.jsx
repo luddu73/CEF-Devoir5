@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"; // J'importe le système de Link pour év
 export default function Footer() {
     return(   
         <footer className="Footer">
-            <div className="container-expend bg-dark py-4 m-auto row justify-content-center sticky-bottom">
+            <div className="container-expend bg-dark py-4 m-auto row justify-content-center bottom">
                 <div className="col-11">
                     <div className="row justify-content-center text-light m-4">
                         <div className="col-md-3 py-1 px-3">

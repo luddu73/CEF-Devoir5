@@ -21,6 +21,16 @@ h1, h2, h3, h4, h5, h6, strong {
     "YTLC" 500;
 }
 
+/* Préparation pour que le footer soit collé au bas de l'écran */
+html, body, main{
+  min-height:100%; 
+}
+footer{
+  position:absolute;
+  bottom: auto;
+  width:100%;
+  padding-top:50px;
+}
 
 /* Les liens se soulignent dans l'header au survol */
 header a:hover{
