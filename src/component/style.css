@@ -35,7 +35,11 @@ footer{
 header a:hover{
   text-decoration: underline;
 }
-
+/* Ajout légère animation au changement de page */
+a.text-decoration-underline.nav-link{
+  font-variation-settings: "CASL" 0.5;
+  transition: font-weight 0.5s ease-in-out;
+}
 /* Mise en forme des icones de réseaux sociaux */
 .socialnetwork {
   font-size:2rem;
@@ -45,10 +49,12 @@ header a:hover{
 /* Changement de couleur lors du passage de la sourie icone réseaux sociaux */
 .socialnetwork:hover{
   opacity:100%;
+  transition: all 0.3s ease-out;
 }
 /* Les liens deviennent gras dans le footer au survol */
 footer a:hover{
   font-weight: bolder;
+  transition: all 0.3s ease-out;
 }
 
 /* Mise en place du background principal */
@@ -115,4 +121,5 @@ footer a:hover{
 /* Ajout de l'effet d'éclaircissement au survol du bouton primary dans la page Portfolio */
 .Portfolio .btn-primary:hover{
   filter: brightness(1.4);
+  transition: all 0.3s ease-out;
 }
