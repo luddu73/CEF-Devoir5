@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 function Contact() {
     return (
       <div className="Contact">
@@ -40,18 +41,16 @@ function Contact() {
                     <div className="col-md-6 py-4">
                         <h3 className="pb-2 fs-2 mb-4">Mes coordonnées</h3>
                         <p className="m-auto"><strong className="fs-4">John Doe</strong></p>
-                        <p>
-                            <adress>
-                                <i class="bi bi-map"></i> 40 Rue Laure Diebold<br/>
-                                <i class="bi bi-geo-alt"></i> 69009 Lyon, France<br/>
-                                <i class="bi bi-phone"></i> 06 06 06 06 06<br/>
-                                <i class="bi bi-envelope-at"></i> john.doe@gmail.com<br/>
-                            </adress>
-                            <div className="my-4">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5565.2543020379735!2d4.7989789!3d45.778662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb65edac5b3f%3A0xe01c47049cb2e2b9!2s40%20Rue%20Laure%20Diebold!5e0!3m2!1sfr!2sfr!4v1732464160990!5m2!1sfr!2sfr" 
-                                width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="ratio"></iframe>
-                            </div>
-                        </p>
+                        <address>
+                            <i class="bi bi-map"></i> 40 Rue Laure Diebold<br/>
+                            <i class="bi bi-geo-alt"></i> 69009 Lyon, France<br/>
+                            <i class="bi bi-phone"></i> 06 06 06 06 06<br/>
+                            <i class="bi bi-envelope-at"></i> john.doe@gmail.com<br/>
+                        </address>
+                        <div className="my-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5565.2543020379735!2d4.7989789!3d45.778662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb65edac5b3f%3A0xe01c47049cb2e2b9!2s40%20Rue%20Laure%20Diebold!5e0!3m2!1sfr!2sfr!4v1732464160990!5m2!1sfr!2sfr" 
+                            width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="ratio"></iframe>
+                        </div>
                     </div>
                 </div>
 
