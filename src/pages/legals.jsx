@@ -2,6 +2,9 @@ function Legals() {
 
     document.title = "Mentions Légales - John Doe, Développeur web full stack";
 
+    const metaRobots = document.querySelector("meta[name='robots']");
+    metaRobots.content="noindex";
+
     return (
       <div className="Legals">
         <div className="row justify-content-center m-auto mt-4">

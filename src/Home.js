@@ -1,6 +1,9 @@
 function Home() {
 
   document.title = "John Doe, Développeur web full stack";
+  
+  const metaRobots = document.querySelector("meta[name='robots']");
+  metaRobots.content="index";
 
   return (
     <div className="Home">

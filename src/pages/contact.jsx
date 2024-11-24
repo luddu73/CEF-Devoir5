@@ -3,6 +3,9 @@ function Contact() {
 
     document.title = "Contact - John Doe, Développeur web full stack";
 
+    const metaRobots = document.querySelector("meta[name='robots']");
+    metaRobots.content="index";
+    
     return (
       <div className="Contact">
         <div className="row justify-content-center m-auto mt-4">
