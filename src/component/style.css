@@ -50,12 +50,19 @@ footer a:hover{
   opacity: 0.7;
   height: 935px;
 }
+/* Mise en place du background sur les pages */
+.pages-Banner{
+  background-image: url(/public/img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
 
 /*Mise en forme des titres dans la présentations */
 .home-presentation h3{
   border-bottom: 0.1em solid #0d6efd;
 }
-
+/* Changement de taille d'écriture selon taille de l'écran */
 @media screen and (min-width: 992px) {
     .home-name {
       font-size:5.5em;
@@ -73,7 +80,14 @@ footer a:hover{
   }
 }
 
+/* Séparateur entre les infos du profil GitHub */
 .ProfilGitHub li+li {
     border-top: 1px solid grey;
 }
 
+
+/* Mise en forme des icones de la page de services */
+.icon-services {
+  font-size:2rem;
+  margin:0.1em;
+}
