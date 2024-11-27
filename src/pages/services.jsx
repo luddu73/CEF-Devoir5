@@ -1,12 +1,15 @@
 function Services() {
 
     document.title = "Services - John Doe, Développeur web full stack";
+    // Mise à jour du titre de la page web
 
     const metaRobots = document.querySelector("meta[name='robots']");
     metaRobots.content="index";
+    // Mise à jour de la balise meta afin d'indexer la page web
     
     return (
       <div className="Services">
+        { /* Bannière mise en page directement sur la page et gérée avec img-fluid afin de la rendre responsive */ }
         <img src="../img/banner.jpg" className="img-fluid" alt="Bannière représentant une illustration abstraite de faisceaux lumineux bleus sur un fond sombre, 
                                                                 représentant un flux d'énergie ou de données."></img>
         <div className="row justify-content-center m-auto mt-4">
