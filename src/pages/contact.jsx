@@ -7,7 +7,96 @@ function Contact() {
     const metaRobots = document.querySelector("meta[name='robots']");
     metaRobots.content="index";
     // Mise à jour de la balise meta afin d'indexer la page web
-    
+
+
+    function verifEmail(email) // Fonction qui permet de vérifier la structure d'un mail
+    {
+        const emailVerification = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Expression régulière pour valider les emails, inspirer sur internet
+        return emailVerification.test(email);
+    }
+
+    function verifTel(tel) // Fonction qui permet de vérifier la structure d'un numéro de téléphone
+    {
+        const telVerification = /^[0-9]{10}$/; // J'accepte des chiffres uniquement d'une longueur de 10
+        return telVerification.test(tel);
+    }
+
+    function addErrorInfo(parametre,texte) // Fonction qui permet d'ajouter une information d'erreur sur le formulaire
+    {
+        let input = document.getElementById(parametre);
+        if(!document.getElementById('invalid'+parametre))
+        {
+            let alertDiv = document.createElement("div");
+            let contenuAlertDiv = document.createTextNode("Vous devez saisir " +texte); 
+            alertDiv.appendChild(contenuAlertDiv); // Mon texte est enfant de ma nouvelle div
+            alertDiv.setAttribute("class", "invalid-feedback"); // J'ajoute à ma div une class
+            alertDiv.setAttribute("id", "invalid"+parametre); // ainsi qu'un ID
+            alertDiv.style.display = "flex"; // Je met à jour le style qui est par défaut sur none
+            input.after(alertDiv); // Ma nouvelle div est ajoutée à la suite de l'input
+        }
+    }
+    function removeErrorInfo(parametre) // Fonction qui retire l'information d'erreur sur le formulaire
+    {
+        let formDiv = document.getElementById("form"+parametre);
+        if(document.getElementById('invalid'+parametre)) // Si le nom n'est pas vide et un élement à cet ID
+        {
+            let invalidDiv = document.getElementById("invalid"+parametre); // Je récupère la div 
+            invalidDiv.remove(); // et l'a supprime
+
+            formDiv.classList.remove("class", "was-validated"); // J'enlève la class de l'effet rouge
+        }
+    }
+
+    function UpdateForm(parametre,texte) // A chaque modification dans le formulaire, cette fonction se lance
+    {
+        let input = document.getElementById(parametre);
+        console.log(parametre);
+        if(parametre === "Email") // Pour le paramètre email, je lance une vérification spéciale liée à la validité de l'email
+        {
+            const emailInput = document.getElementById("Email").value;
+            if(!verifEmail(emailInput)) 
+            {
+                addErrorInfo(parametre,texte);
+            }
+            else
+            {
+                removeErrorInfo(parametre);
+            }
+        }
+        else if(parametre === "Tel")
+        {
+            const telInput = document.getElementById("Tel").value;
+            if(!verifTel(telInput)) 
+            {
+                addErrorInfo(parametre,texte);
+            }
+            else
+            {
+                removeErrorInfo(parametre);
+            }
+        }
+        else if(input.value === "")
+        {
+            addErrorInfo(parametre,texte);
+        }
+        else
+        {
+            removeErrorInfo(parametre);
+        }
+    }
+
+
+    function checkForm()
+    {
+        UpdateForm("Nom","votre nom.");
+        UpdateForm("Email","votre adresse email.");
+        UpdateForm("Tel","votre numéro de téléphone.");
+        UpdateForm("Sujet","un sujet à votre message.");
+        UpdateForm("Message","un message.");
+    }
+
+
+
     return (
       <div className="Contact">
         <div className="row justify-content-center m-auto mt-4">
@@ -25,24 +114,24 @@ function Contact() {
                 <div className="row shadow-lg p-4 m-3 bg-body-tertiary rounded home-presentation">
                     <div className="col-md-6 py-4">
                         <h2 className="pb-2 fs-2 mb-4">Formulaire de contact</h2>
-                        <form className="row my-4" method="post" action="#">
-                            <div className="input-group my-1">
-                                <input type="text" className="form-control" id="nom" aria-describedby="nom" placeholder="Votre nom" required></input>
+                        <form className="row my-4">
+                            <div className="input-group my-1" id="formNom">
+                                <input type="text" className="form-control" id="Nom" aria-describedby="Nom" placeholder="Votre nom" onChange={() => UpdateForm("Nom","votre nom.")} required></input>
                             </div>
-                            <div className="input-group my-1">
-                                <input type="email" className="form-control" id="email" aria-describedby="email" placeholder="Votre adresse email" required></input>
+                            <div className="input-group my-1" id="formEmail">
+                                <input type="email" className="form-control" id="Email" aria-describedby="Email" placeholder="Votre adresse email" onChange={() => UpdateForm("Email","votre adresse email.")} required></input>
                             </div>
-                            <div className="input-group my-1">
-                                <input type="tel" className="form-control" id="tel" aria-describedby="tel" placeholder="Votre numéro de téléphone" required></input>
+                            <div className="input-group my-1" id="formTel">
+                                <input type="tel" className="form-control" id="Tel" aria-describedby="Tel" placeholder="Votre numéro de téléphone" onChange={() => UpdateForm("Tel","votre numéro de téléphone.")} required></input>
                             </div>
-                            <div className="input-group my-1">
-                                <input type="text" className="form-control" id="sujet" aria-describedby="sujet" placeholder="Sujet" required></input>
+                            <div className="input-group my-1" id="formSujet">
+                                <input type="text" className="form-control" id="Sujet" aria-describedby="Sujet" placeholder="Sujet" onChange={() => UpdateForm("Sujet","un sujet à votre message.")} required></input>
                             </div>
-                            <div className="my-1">
-                                <textarea className="form-control ratio" style={{height:"400px"}} placeholder="Votre message" id="message"></textarea>
+                            <div className="my-1" id="formMessage"v>
+                                <textarea className="form-control ratio" style={{height:"400px"}} placeholder="Votre message" id="Message" onChange={() => UpdateForm("Message","votre message.")} required></textarea>
                             </div>
                             <div className="col-12 my-2 text-center">
-                                <button className="btn btn-primary" type="submit">Envoyer</button>
+                                <button className="btn btn-primary" onClick={() => checkForm()} type="submit">Envoyer</button>
                             </div>
                         </form>
                     </div>
