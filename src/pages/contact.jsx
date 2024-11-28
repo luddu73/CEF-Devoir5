@@ -8,6 +8,7 @@ function Contact() {
     metaRobots.content="index";
     // Mise à jour de la balise meta afin d'indexer la page web
 
+    let pasok = 0; // Variable initiale qui ne bloque pas le formulaire
 
     function verifEmail(email) // Fonction qui permet de vérifier la structure d'un mail
     {
@@ -33,6 +34,7 @@ function Contact() {
             alertDiv.setAttribute("id", "invalid"+parametre); // ainsi qu'un ID
             alertDiv.style.display = "flex"; // Je met à jour le style qui est par défaut sur none
             input.after(alertDiv); // Ma nouvelle div est ajoutée à la suite de l'input
+            pasok = 1;
         }
     }
     function removeErrorInfo(parametre) // Fonction qui retire l'information d'erreur sur le formulaire
@@ -86,13 +88,18 @@ function Contact() {
     }
 
 
-    function checkForm()
+    function checkForm() // Lors du clique je relance l'ensemble des contrôles
     {
+        pasok = 0;
         UpdateForm("Nom","votre nom.");
         UpdateForm("Email","votre adresse email.");
         UpdateForm("Tel","votre numéro de téléphone.");
         UpdateForm("Sujet","un sujet à votre message.");
         UpdateForm("Message","un message.");
+        if(pasok !== 1) // Si je n'ai pas de valeur à 1, alors je considère que le formulaire est ok
+        {
+            alert("Votre formulaire a bien été envoyé !");
+        }
     }
 
 
