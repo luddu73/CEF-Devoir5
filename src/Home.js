@@ -1,9 +1,11 @@
 function Home() {
 
   document.title = "John Doe, Développeur web full stack";
+  // Mise à jour du titre de la page web
   
   const metaRobots = document.querySelector("meta[name='robots']");
   metaRobots.content="index";
+  // Mise à jour de la balise meta afin d'indexer la page web
 
   return (
     <div className="Home">

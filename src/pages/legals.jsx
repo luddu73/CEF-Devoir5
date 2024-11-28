@@ -1,9 +1,11 @@
 function Legals() {
 
     document.title = "Mentions Légales - John Doe, Développeur web full stack";
+    // Mise à jour du titre de la page web
 
     const metaRobots = document.querySelector("meta[name='robots']");
     metaRobots.content="noindex";
+    // Mise à jour de la balise meta afin de ne pas indexer la page web
 
     return (
       <div className="Legals">
